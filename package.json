@@ -2,14 +2,17 @@
   "name": "bm-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "lodash": "^4.17.21",
+    "vue": "^2.7.14",
+    "vue-router": "^3.6.5",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -17,10 +20,15 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "axios": "^1.8.1",
+    "element-ui": "^2.15.14",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "sass": "^1.85.1",
+    "sass-loader": "^10.5.2",
+    "vue-template-compiler": "^2.7.14"
   },
+  "main": "src/main.js",
   "eslintConfig": {
     "root": true,
     "env": {

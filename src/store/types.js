@@ -1,0 +1,2 @@
+export const APP_SET_SETTINGS = 'APP_SET_SETTINGS'
+export const APP_ADD_SETTING = 'APP_ADD_SETTING'
