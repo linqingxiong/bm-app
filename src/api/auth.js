@@ -8,16 +8,38 @@ export const login = (data) => {
     })
 }
 
-export const heartbeat = () => {
+export const getLicense = () => {
     return request({
-        url: '/auth/heartbeat',
+        url: '/auth/license',
         method: 'get'
     })
 }
 
-export const logout = () => {
+export const setLicense = (key) => {
     return request({
-        url: '/auth/logout',
+        url: '/auth/license/'+key,
+        method: 'put'
+    })
+}
+
+export const getBoundDevices = () => {
+    return request({
+        url: '/auth/license/devices',
+        method: 'get'
+    })
+}
+
+export const bindDevice = () => {
+    return request({
+        url: '/auth/license/bind',
         method: 'post'
     })
 }
+
+export const getDeviceId = () => {
+    return request({
+        url: '/auth/deviceId',
+        method: 'get'
+    })
+}
+

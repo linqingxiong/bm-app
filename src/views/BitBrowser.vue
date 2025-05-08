@@ -362,7 +362,7 @@ export default {
           page: this.currentPage - 1,
           pageSize: this.pageSize,
           sortProperties: 'seq',
-          sortDirection: 'asc',
+          sortDirection: 'desc',
           seq: Number.parseInt(this.searchKey)
         }
 
